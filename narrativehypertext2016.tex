@@ -101,7 +101,7 @@ Yarncraft is an attempt to leverage Millard et al.'s location-aware model of scu
 
 For our example, we tailor one of the stories marked up in their framework for use in a physical space around the city of Southampton to be used instead in Minecraft\footnote{http://minecraft.net/}, a creative sandbox virtual world that allows players to explore a stylised, procedurally-generated environment, build structures and artwork, and interact with friendly and hostile non-player characters (NPCs).
 
-This was a two-stage process -- firstly, tailoring the framework to be suitable for virtual locations in general (and particularly for use within Minecraft) and secondly, developing a mod to Minecraft to allow it to read the framework and present the narrative to the user.
+This was a two-stage process -- firstly, tailoring the framework to be suitable for virtual locations in general (and particularly for use within Minecraft) and secondly, developing a mod (an, often unofficial, modification to the base game) to Minecraft to allow it to read the framework and present the narrative to the user.
 
 
 
@@ -152,6 +152,23 @@ further abstract context and statistics such as
 
 \TODO{Event tags}
 Location-aware narratives based in the physical world allow the story to be adapted to the user's location either through branching the story as the user moves through space, or by modifying the tone of a page to suit the user's current location. However, with a virtual world, the world itself can also be adapted as the narrative progresses. This can be done to shape the general aesthetic and environment of the virtual world to be in keeping with the narrative (as a whole, or at a specific point in time); for example, altering the weather or light levels.  This can also be leveraged if the author wishes to trigger specific events during the course of the story. In Figure \ref{figure:gather} the player is instructed to go to a place where people gather. Due to the state of mind of the protagonist of the story, it appears deserted at first. But, when the player arrives in Figure \ref{figure:villagers}, a crowd of friendly NPC villagers appear around them.
+
+\begin{figure}
+\centering
+\begin{verbatim}
+"events": [
+    {
+        "type": "spawn",
+        "npc": "villager",
+        "number": 150
+    }
+]
+\end{verbatim}
+
+\caption{Example of a NearbyLocation}
+\label{figure:nearbylocation}
+\end{figure}
+
 
 \begin{figure}
 \centering
