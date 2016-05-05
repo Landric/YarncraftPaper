@@ -109,16 +109,31 @@ The interface to the Minecraft mod is, at this stage, relatively simplistic, and
 \centering
 \begin{verbatim}
 "locations": [
-             	{
-                		"type": "NearbyLocation",
-                        "nearby": "Water",
-                        "distance": 5
-                }
+    {
+        "type": "NearbyLocation",
+        "nearby": "Water",
+        "distance": 5
+    }
 ]
 \end{verbatim}
 
-\caption{``Suddenly, a crowd appeared''}
-\label{figure:villagers}
+\caption{Example of a NearbyLocation}
+\label{figure:nearbylocation}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{verbatim}
+"locations": [
+    {
+        "type": "TagLocation",
+        "tag": "indoors"
+    }
+]
+\end{verbatim}
+
+\caption{Example of a TagLocation}
+\label{figure:nearbylocation}
 \end{figure}
 
 
